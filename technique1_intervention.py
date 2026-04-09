@@ -156,7 +156,7 @@ for yr in shock_years:
 model_real = SARIMAX(
     beef,
     exog=exog_real,
-    order=(1, 1, 0),                    # AR(1) on first-differences (cattle cycle)
+    order=(1, 0, 0),                    # AR(1) on first-differences (cattle cycle)
     trend='n'
 )
 res_real = model_real.fit(disp=False)
