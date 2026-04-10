@@ -133,7 +133,7 @@ C_FCAST  = '#ff7f0e'
 C_CI80   = '#ffc47a'
 C_CI95   = '#ffe5c0'
 
-fig = plt.figure(figsize=(13, 14))
+fig = plt.figure(figsize=(14, 6))
 fig.suptitle(
     "US Beef Cow Inventory — UCM Decomposition & 3-Year Forecast\n"
     f"Local linear trend  +  stochastic cycle (period ≈ {period_beef:.1f} yr,  "
@@ -306,7 +306,7 @@ ax4.set_xlim(xlim)
 ax4.set_xticks(range(1970, 2027, 5))
 ax4.tick_params(axis='x', rotation=0)
 
-plt.savefig("beef_decomposition_forecast.png",
+plt.savefig("beef_decomposition_forecast_wide.png",
             dpi=150, bbox_inches='tight')
 print("\nPlot saved: beef_decomposition_forecast.png")
 plt.show()
